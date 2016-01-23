@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入学号" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dMv-Lz-60J">
+                                <rect key="frame" x="210" y="48" width="126" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hR4-VE-Y7P">
+                                <rect key="frame" x="37" y="101" width="51" height="30"/>
+                                <color key="backgroundColor" red="0.7847455995" green="0.83877213920000004" blue="0.87853140780000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="增">
+                                    <color key="titleColor" red="0.36651404170000002" green="0.14794207349999999" blue="0.57325205180000005" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="addClick:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="VBQ-lj-THm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QoR-mt-pf6">
+                                <rect key="frame" x="113" y="101" width="49" height="30"/>
+                                <color key="backgroundColor" red="0.7847455995" green="0.83877213920000004" blue="0.87853140780000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="删">
+                                    <color key="titleColor" red="0.36651404170000002" green="0.14794207349999999" blue="0.57325205180000005" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="deleteClick:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Abb-6u-2nR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tCK-fn-in6">
+                                <rect key="frame" x="198" y="101" width="49" height="30"/>
+                                <color key="backgroundColor" red="0.7847455995" green="0.83877213920000004" blue="0.87853140780000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="改">
+                                    <color key="titleColor" red="0.36651404170000002" green="0.14794207349999999" blue="0.57325205180000005" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="changeClick:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="0vZ-v0-DVN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rPe-fh-oZs">
+                                <rect key="frame" x="286" y="101" width="50" height="30"/>
+                                <color key="backgroundColor" red="0.7847455995" green="0.83877213920000004" blue="0.87853140780000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="查">
+                                    <color key="titleColor" red="0.36651404170000002" green="0.14794207349999999" blue="0.57325205180000005" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="searchClick:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="SWE-Ux-COy"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入姓名" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="abr-vR-qau">
+                                <rect key="frame" x="37" y="48" width="120" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="NTz-mG-EOg">
+                                <rect key="frame" x="25" y="164" width="325" height="483"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.83062510960000002" green="0.66834139690000005" blue="0.83751578280000005" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="IDField" destination="dMv-Lz-60J" id="OJ6-k3-14h"/>
+                        <outlet property="nameField" destination="abr-vR-qau" id="LX0-OF-CvF"/>
+                        <outlet property="tableView" destination="NTz-mG-EOg" id="FWc-mY-XgZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="176.5" y="396.5"/>
+        </scene>
+    </scenes>
+</document>
